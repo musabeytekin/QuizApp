@@ -1,0 +1,64 @@
+.panel-root {
+  display: flex;
+}
+.questions {
+  flex: 62%;
+  background: #f4f4f4;
+  padding: 3vh 3vw;
+}
+
+table.table {
+  border: none;
+}
+
+table.table * {
+  border: none;
+}
+.header {
+  color: #000;
+  font-family: 1em sans-serif;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 260.87% */
+}
+
+.op-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3em;
+}
+
+.question-edit-root {
+  display: flex;
+}
+.question-edit {
+  flex: 62%;
+  background: #f4f4f4;
+  padding: 3vh 3vw;
+}
+
+.question-edit form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.btn-save {
+  border-radius: 4px;
+  background: #6bb5e0;
+  border: none;
+  margin: 0 !important;
+  padding: 4px 20px;
+  color: #ffffff;
+  height: 38px;
+  width: 20%;
+}
+
+.question-edit .operations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}

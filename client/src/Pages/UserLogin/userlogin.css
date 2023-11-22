@@ -1,0 +1,49 @@
+.user-login-root {
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #151d39 0%,
+
+    rgba(42, 54, 96) 100%
+  );
+
+  /* padding: 20vh; */
+}
+
+.form-login {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.form-description {
+  color: #fff;
+  font-family: Inknut Antiqua;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px; /* 400% */
+}
+
+.form-login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 27vw;
+}
+
+.form-login .logo-inner {
+    width: unset;
+    height: unset;
+}
+
+.form-login button{
+    width: 10vw;
+}
+

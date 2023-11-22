@@ -1,0 +1,10 @@
+.logo-inner {
+  width: 19vw;
+  height: 15vh;
+  color: var(--primary);
+  font-family: Impact;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
