@@ -8,7 +8,11 @@ Projeyi çalıştırmak için aşağıdaki adımları takip edin:
 
 ### 1. Sunucu (Server) Başlatma
 
-Proje klasörü içinde `server` adında bir dosya bulunmaktadır. Bu dosyanın içine giderek aşağıdaki komutu çalıştırın:
+Proje klasörü içinde `server` adında bir dosya bulunmaktadır. Bu dosyanın içine giderek aşağıdaki 2 komutu sırası ile çalıştırın:
+
+```bash
+npm i
+```
 
 ```bash
 node server.js
@@ -16,7 +20,11 @@ node server.js
 
 ### 2. Client Server Başlatma
 
-Proje klasörü içinde client adında bir dosya bulunmaktadır. Bu dosyanın içine giderek aşağıdaki komutu çalıştırın:
+Proje klasörü içinde client adında bir dosya bulunmaktadır. Bu dosyanın içine giderek aşağıdaki 2 komutu sırası ile çalıştırın:
+
+```bash
+npm i
+```
 
 ```bash
 npm start
