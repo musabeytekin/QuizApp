@@ -3,11 +3,10 @@ import "./quiz.css";
 import { Logo } from "../../Components/Logo/Logo";
 import QuestionImg from "../../img/question4.webp";
 import { useState } from "react";
-import { Link, useNavigate, useNavigation } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import { increaseScore } from "../../redux/scoreSlice";
-import axios, { Axios } from "axios";
+import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
-// import Question from "../../Components/Question/Question";
 const Quiz = () => {
   const navigate = useNavigate();
   const [number, setNumber] = useState(0);
@@ -24,7 +23,6 @@ const Quiz = () => {
     });
   }, []);
 
-  // console.log(questions);
 
   const getCorrectAnswer = (question) => {
     return question.correctAnswer;
@@ -41,7 +39,7 @@ const Quiz = () => {
       console.log(score);
     }
 
-    if (number + 1 === 10) {
+    if (number + 1 === 10 || e.target.innerText === "Finish") {
       navigate("/quizfinish");
     }
     setNumber(number + 1);

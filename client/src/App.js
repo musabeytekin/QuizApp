@@ -1,13 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./index.css";
 import { Home } from "./Home";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import UserLogin from "./Pages/UserLogin/UserLogin";
-import { Provider, useSelector } from "react-redux";
-import store from "./redux/store";
+import { useSelector } from "react-redux";
 import AdminLogin from "./Pages/AdminLogin/AdminLogin";
 import Quiz from "./Pages/Quiz/Quiz";
 import QuizFinish from "./Pages/QuizFinish/QuizFinish";
@@ -41,18 +39,6 @@ const App = () => {
             />
           </Route>
 
-          {/* <Route
-            path="/admin/questions"
-            element={
-              admin === true ? <Questions /> : <Navigate to={"/admin"} />
-            }
-          /> */}
-          {/* <Route
-            path="/admin/edit"
-            element={
-              admin === true ? <QuestionDetail /> : <Navigate to={"/admin"} />
-            }
-          /> */}
           <Route
             path="/quiz"
             element={user === true ? <Quiz /> : <Navigate to={"/login"} />}
@@ -63,12 +49,6 @@ const App = () => {
               user === true ? <QuizFinish /> : <Navigate to={"/login"} />
             }
           />
-          {/* <Route
-            path="/admin/questions/add"
-            element={
-              admin === true ? <AddQuestion /> : <Navigate to={"/admin"} />
-            }
-          /> */}
         </Routes>
       </BrowserRouter>
     </div>

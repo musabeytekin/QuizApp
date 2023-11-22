@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import { Logo } from "../../Components/Logo/Logo";
 import { AdminLogo } from "../../Components/AdminLogo/AdminLogo";
 import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { setAdmin } from "../../redux/authSlice";
 
 const AdminLogin = () => {
